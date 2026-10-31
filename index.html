@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUTOPOINT — Автосервис</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">AUTO<span>POINT</span></div>
+
+        <nav>
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+
+        <a href="#contacts" class="header-button">Записаться</a>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="subtitle">АВТОСЕРВИС • КАЧЕСТВО • НАДЁЖНОСТЬ</p>
+
+                <h1>ТВОЙ АВТОМОБИЛЬ<br>
+                    <span>В НАДЁЖНЫХ РУКАХ</span>
+                </h1>
+
+                <p class="description">
+                    Профессиональное обслуживание и ремонт автомобилей.
+                    Заботимся о вашем автомобиле.
+                </p>
+
+                <a href="#services" class="main-button">
+                    Наши услуги →
+                </a>
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <p class="subtitle">ЧТО МЫ ПРЕДЛАГАЕМ</p>
+            <h2>Наши услуги</h2>
+
+            <div class="service-list">
+                <div class="service-card">
+                    <img src="images/diagnostic.jpg" alt="Диагностика">
+                    <h3>01 / Диагностика</h3>
+                    <p>Проверка основных систем автомобиля.</p>
+                    <strong>от 1 000 ₽</strong>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/oil.jpg" alt="Замена масла">
+                    <h3>02 / Замена масла</h3>
+                    <p>Обслуживание двигателя и замена фильтров.</p>
+                    <strong>от 1 500 ₽</strong>
+                </div>
+
+                <div class="service-card">
+                    <img src="images/repair.jpg" alt="Ремонт автомобиля">
+                    <h3>03 / Ремонт ходовой</h3>
+                    <p>Проверка и ремонт подвески автомобиля.</p>
+                    <strong>от 2 000 ₽</strong>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Почему выбирают нас?</h2>
+            <p>Внимание к деталям, прозрачные цены
+            и ответственный подход к каждому автомобилю.</p>
+        </section>
+
+        <section id="contacts" class="contacts">
+    <h2>Запишитесь на обслуживание</h2>
+    <p>Оставьте заявку, и мы свяжемся с вами.</p>
+
+    <form id="booking-form">
+        <input type="text" id="name"
+            placeholder="Ваше имя" required>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="+7 (999) 123-45-67"
+            required
+        >
+
+        <select id="service" required>
+            <option value="">Выберите услугу</option>
+            <option>Диагностика</option>
+            <option>Замена масла</option>
+            <option>Ремонт ходовой</option>
+        </select>
+
+        <button type="submit" class="main-button">
+            Отправить заявку
+        </button>
+    </form>
+
+    <p id="form-message"></p>
+</section>
+    </main>
+
+    <footer>
+        © 2026 AUTOPOINT. Учебный проект.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
